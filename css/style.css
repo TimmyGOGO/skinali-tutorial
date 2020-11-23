@@ -8,6 +8,25 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
 @font-face {
   font-family: "Proxima Nova Semibold";
   src: url("../fonts/ProximaNova-Semibold.eot");
@@ -31,7 +50,7 @@ body {
 
 .button-o {
   border: 2px solid #507fe1;
-  background-color: transparent;
+  background-color: #fff;
   padding: 17px 22px;
   font-size: 12px;
   text-transform: uppercase;
@@ -45,6 +64,12 @@ body {
   padding: 25px 45px;
   background-color: #507fe1;
   color: #fff;
+}
+
+@media (max-width: 576px) {
+  .button-o {
+    font-style: 10px;
+  }
 }
 
 .navbar {
@@ -65,7 +90,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 80px;
 }
 
 .navbar__mobile, .navbar__landline {
@@ -99,8 +123,8 @@ body {
   color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
 }
 
 .menu_active {
@@ -144,7 +168,7 @@ body {
   border: none;
   border-right: 1px solid rgba(81, 11, 186, 0.1);
   border-left: 1px solid rgba(81, 11, 186, 0.1);
-  height: 80px;
+  height: 60px;
   width: 70px;
 }
 
@@ -169,11 +193,38 @@ body {
   color: #7b7b79;
 }
 
+@media (max-width: 991px) {
+  .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+  .menu {
+    top: 60px;
+  }
+  .menu-button {
+    height: 60px;
+  }
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__link {
+    margin-bottom: 20px;
+  }
+}
+
 .hero {
   width: 100%;
-  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center top 80px;
+  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center top 60px;
   background-size: contain;
-  padding-top: 180px;
+  padding-top: 130px;
   padding-bottom: 270px;
 }
 
@@ -185,7 +236,14 @@ body {
 .hero__subtitle {
   display: block;
   font-size: 30px;
-  margin-bottom: 67px;
+  margin-bottom: 40px;
   font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    background-size: cover;
+    background-position: top left 20%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
