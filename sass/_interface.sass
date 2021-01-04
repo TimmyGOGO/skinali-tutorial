@@ -1,6 +1,15 @@
 body
   +light
   color: text-color
+.section
+  padding: 100px 0
+  &-title
+    font-size: 30px
+    +bold
+    text-align: center
+    text-transform: uppercase
+  &__title
+    padding-bottom: 100px
 .button-o
   border: 2px solid $primary
   background-color: #fff
@@ -43,4 +52,8 @@ input[type="checkbox"]
       margin-right: 20px
 @media (max-width: 576px)
   .button-o
-    font-style: 10px
+    font-size: 10px
+  .section
+    padding: 60px 0
+    &-title
+      font-size: 24px
