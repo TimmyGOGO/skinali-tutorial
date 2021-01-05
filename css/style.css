@@ -265,8 +265,8 @@ input[type="checkbox"]:checked + label::before {
           justify-content: center;
   background-color: transparent;
   border: none;
-  border-right: 1px solid rgba(231, 54, 80, 0.1);
-  border-left: 1px solid rgba(231, 54, 80, 0.1);
+  border-right: 1px solid rgba(235, 80, 102, 0.1);
+  border-left: 1px solid rgba(235, 80, 102, 0.1);
   height: 60px;
   width: 70px;
 }
