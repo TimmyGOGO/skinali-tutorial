@@ -68,11 +68,11 @@ img {
 }
 
 .button-o {
-  border: 2px solid #ff5666;
+  border: 2px solid #d41715;
   padding: 17px 22px;
   font-size: 12px;
   text-transform: uppercase;
-  color: #ff5666;
+  color: #d41715;
   font-family: "Proxima Nova Semibold", sans-serif;
   background-color: #fff;
   text-decoration: none;
@@ -83,7 +83,7 @@ img {
   border: none;
   text-transform: uppercase;
   padding: 25px 45px;
-  background-color: #ff5666;
+  background-color: #d41715;
   color: #fff;
   font-family: "Proxima Nova Semibold", sans-serif;
 }
@@ -93,17 +93,17 @@ img {
 }
 
 .button-fitting {
-  color: #ff5666;
+  color: #d41715;
   background-color: #fff;
 }
 
 .button-add {
-  background-color: #ff8994;
+  background-color: #eb3331;
   color: #fff;
 }
 
 .button-like {
-  background-color: #ff5666;
+  background-color: #d41715;
   height: 30px;
   width: 30px;
   border: none;
@@ -120,7 +120,7 @@ img {
 }
 
 .input::focus {
-  border: 1px solid #ff5666;
+  border: 1px solid #d41715;
 }
 
 input[type="checkbox"] {
@@ -128,7 +128,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + label::before {
-  background-color: #ff5666;
+  background-color: #d41715;
 }
 
 .checkbox-label {
@@ -216,7 +216,7 @@ input[type="checkbox"]:checked + label::before {
   top: 80px;
   width: 100%;
   padding: 16px 0;
-  background-color: #ff5666;
+  background-color: #d41715;
   color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -265,8 +265,8 @@ input[type="checkbox"]:checked + label::before {
           justify-content: center;
   background-color: transparent;
   border: none;
-  border-right: 1px solid rgba(235, 80, 102, 0.1);
-  border-left: 1px solid rgba(235, 80, 102, 0.1);
+  border-right: 1px solid rgba(231, 54, 80, 0.1);
+  border-left: 1px solid rgba(231, 54, 80, 0.1);
   height: 60px;
   width: 70px;
 }
@@ -576,7 +576,7 @@ input[type="checkbox"]:checked + label::before {
   padding: 10px;
   text-transform: uppercase;
   color: #fff;
-  background-color: rgba(255, 86, 102, 0.6);
+  background-color: rgba(212, 23, 21, 0.6);
 }
 
 .catalog-card__image {
@@ -628,7 +628,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .blog__link-more {
-  color: #ff5666;
+  color: #d41715;
   font-size: 16px;
 }
 
@@ -801,7 +801,7 @@ input[type="checkbox"]:checked + label::before {
   display: block;
   position: absolute;
   top: 26%;
-  right: -64%;
+  right: -62%;
 }
 
 .step__text {
@@ -942,6 +942,107 @@ input[type="checkbox"]:checked + label::before {
   .contacts__address {
     max-width: 200px;
     margin: auto;
+  }
+}
+
+.questions__title {
+  font-size: 30px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.questions__link {
+  font-size: 24px;
+  color: #d41715;
+}
+
+.questions-block {
+  max-width: 800px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #262626;
+  color: #fff;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__title {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.footer__subtitle {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.footer__copy {
+  color: #767676;
+}
+
+.footer__pay-logo {
+  margin: 15px;
+}
+
+.footer__contacts {
+  text-align: right;
+}
+
+.footer__phone {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Proxima Nova Semibold", sans-serif;
+}
+
+.footer__mail {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-social__link {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer__contacts {
+    text-align: center;
+    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
