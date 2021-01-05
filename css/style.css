@@ -68,11 +68,11 @@ img {
 }
 
 .button-o {
-  border: 2px solid #507fe1;
+  border: 2px solid #ff5666;
   padding: 17px 22px;
   font-size: 12px;
   text-transform: uppercase;
-  color: #507fe1;
+  color: #ff5666;
   font-family: "Proxima Nova Semibold", sans-serif;
   background-color: #fff;
   text-decoration: none;
@@ -83,7 +83,7 @@ img {
   border: none;
   text-transform: uppercase;
   padding: 25px 45px;
-  background-color: #507fe1;
+  background-color: #ff5666;
   color: #fff;
   font-family: "Proxima Nova Semibold", sans-serif;
 }
@@ -93,17 +93,17 @@ img {
 }
 
 .button-fitting {
-  color: #507fe1;
+  color: #ff5666;
   background-color: #fff;
 }
 
 .button-add {
-  background-color: #7c9fe8;
+  background-color: #ff8994;
   color: #fff;
 }
 
 .button-like {
-  background-color: #507fe1;
+  background-color: #ff5666;
   height: 30px;
   width: 30px;
   border: none;
@@ -120,7 +120,7 @@ img {
 }
 
 .input::focus {
-  border: 1px solid #507fe1;
+  border: 1px solid #ff5666;
 }
 
 input[type="checkbox"] {
@@ -128,7 +128,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + label::before {
-  background-color: #507fe1;
+  background-color: #ff5666;
 }
 
 .checkbox-label {
@@ -216,7 +216,7 @@ input[type="checkbox"]:checked + label::before {
   top: 80px;
   width: 100%;
   padding: 16px 0;
-  background-color: #507fe1;
+  background-color: #ff5666;
   color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -265,8 +265,8 @@ input[type="checkbox"]:checked + label::before {
           justify-content: center;
   background-color: transparent;
   border: none;
-  border-right: 1px solid rgba(81, 11, 186, 0.1);
-  border-left: 1px solid rgba(81, 11, 186, 0.1);
+  border-right: 1px solid rgba(235, 80, 102, 0.1);
+  border-left: 1px solid rgba(235, 80, 102, 0.1);
   height: 60px;
   width: 70px;
 }
@@ -274,7 +274,7 @@ input[type="checkbox"]:checked + label::before {
 .menu-button__line {
   width: 20px;
   height: 3px;
-  background: #89a9eb;
+  background: #eb8989;
   margin: 2px 0;
 }
 
@@ -352,12 +352,20 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .offer-block {
-  background: #fff url("../img/offer/form-bg.png") no-repeat center right;
-  background-size: contain;
   padding: 80px;
   margin-top: -200px;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.offer-block_calc-bg {
+  background: #fff url("../img/offer/form-bg-calc.png") no-repeat center right;
+  background-size: contain;
+}
+
+.offer-block_price-bg {
+  background: #fff url("../img/offer/form-bg-price.png") no-repeat center right;
+  background-size: contain;
 }
 
 .offer__title {
@@ -371,6 +379,7 @@ input[type="checkbox"]:checked + label::before {
   display: block;
   font-size: 21px;
   margin-bottom: 48px;
+  max-width: 750px;
 }
 
 .form__row {
@@ -381,7 +390,7 @@ input[type="checkbox"]:checked + label::before {
       -ms-flex-align: center;
           align-items: center;
   max-width: 900px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .form__row:last-child {
@@ -413,18 +422,28 @@ input[type="checkbox"]:checked + label::before {
   width: 100%;
 }
 
+.form__policy {
+  display: inline-block;
+  margin-left: 45px;
+  max-width: 300px;
+  font-size: 17px;
+}
+
 @media (max-width: 1199px) {
   .offer-block {
     background-position: center right -120px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .offer-block {
     background: none;
     background-color: #fff;
     padding: 40px;
   }
+}
+
+@media (max-width: 768px) {
   .offer__title {
     font-size: 24px;
   }
@@ -450,6 +469,11 @@ input[type="checkbox"]:checked + label::before {
   }
   .form__input {
     margin-bottom: 20px;
+  }
+  .form__policy {
+    margin-left: 0;
+    margin-top: 30px;
+    max-width: 400px;
   }
 }
 
@@ -552,7 +576,7 @@ input[type="checkbox"]:checked + label::before {
   padding: 10px;
   text-transform: uppercase;
   color: #fff;
-  background-color: rgba(80, 127, 225, 0.6);
+  background-color: rgba(255, 86, 102, 0.6);
 }
 
 .catalog-card__image {
@@ -604,7 +628,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .blog__link-more {
-  color: #507fe1;
+  color: #ff5666;
   font-size: 16px;
 }
 
@@ -758,7 +782,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .step__image {
-  height: 100px;
+  height: 80px;
 }
 
 .step__title {
@@ -776,7 +800,7 @@ input[type="checkbox"]:checked + label::before {
   background-color: rgba(126, 123, 120, 0.6);
   display: block;
   position: absolute;
-  top: 32%;
+  top: 26%;
   right: -64%;
 }
 
@@ -801,5 +825,76 @@ input[type="checkbox"]:checked + label::before {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+}
+
+.reviews {
+  background-color: #f5f6f8;
+}
+
+.reviews-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews-slider__item {
+  text-align: center;
+}
+
+.reviews-slider__image {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #f37575;
+  border-radius: 60%;
+  margin: 20px auto;
+}
+
+.reviews-slider__text {
+  position: relative;
+  font-size: 15px;
+  font-style: italic;
+  max-width: 370px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.reviews-slider__text::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #fff;
+}
+
+.factory-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.factory-block__text {
+  margin-left: 70px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-size: 20px;
+}
+
+.factory-block__image {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */
