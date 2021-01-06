@@ -29,19 +29,30 @@ img
   background-color: $primary
   color: #fff
   +bold
+  &:focus
+    outline: none
+    -moz-box-shadow: 0 0 2px rgba($outline, 1)
+    -webkit-box-shadow: 0 0 2px rgba($outline,1)
+    box-shadow: 0 0 2px rgba($outline,1)
   &:hover
     cursor: pointer
   &-fitting
     color: $primary
     background-color: #fff
+    &:hover
+      cursor: pointer
   &-add
     background-color: lighten($primary, 10%)
     color: #fff
+    &:hover
+      cursor: pointer
   &-like
     background-color: $primary
     height: 30px
     width: 30px
     border: none
+    &:hover
+      cursor: pointer
 
 .bg-secondary
   background: $bg-secondary
@@ -55,6 +66,42 @@ input[type="checkbox"]
   display: none
   &:checked + label::before
     background-color: $primary
+.select
+  height: 80px
+  width: 100%
+  border: 1px solid #dddddd
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 20px
+    width: 20px
+    height: 20px
+    background: url('../img/check-arrow.png') no-repeat center
+    background-size: 100%
+  &:hover
+    cursor: pointer
+  &_checked
+    line-height: 80px
+    padding-left: 30px
+  &__dropdown
+    position: absolute
+    top: 80px
+    width: 100%
+    background-color: #fff
+    border: 1px solid #dddddd
+    margin: 0
+    list-style: none
+    padding: 0
+    display: none
+    &_open
+      display: block
+  &__option
+    padding: 20px
+    &:hover
+      background-color: $bg-secondary
 .checkbox
   &-label
     display: flex
